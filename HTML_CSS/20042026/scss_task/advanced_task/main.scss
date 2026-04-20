@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'buttons';
+@import 'card';
+
+// Page styling
+body {
+    font-family: Arial, sans-serif;
+    background-color: $secondary-color;
+}
+
+// Center layout
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

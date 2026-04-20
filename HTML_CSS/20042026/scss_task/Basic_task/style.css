@@ -1,0 +1,34 @@
+.card {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card h2 {
+  color: blue;
+  font-size: 24px;
+}
+.card p {
+  font-size: 18px;
+  color: gray;
+}
+.card button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: darkblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

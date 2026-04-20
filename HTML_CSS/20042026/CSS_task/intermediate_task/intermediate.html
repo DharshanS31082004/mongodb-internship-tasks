@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intermediate CSS Tasks</title>
+
+    <style>
+        /* 1. Background color */
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 2. Heading color */
+        h1, h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* 4. Container width + center */
+        main {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* 3. Profile card styling */
+        .card {
+            padding: 20px;
+            border: 2px solid black;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+            text-align: center;
+        }
+
+        /* Paragraph font */
+        p {
+            font-size: 18px;
+        }
+
+        /* 2. Button hover */
+        button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* 5. Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Intern Profiles</h1>
+</header>
+
+<main>
+
+    <!-- PROFILE CARDS -->
+    <section>
+
+        <div class="card">
+            <img src="https://picsum.photos/150" alt="Profile">
+            <h2>Dharshan</h2>
+            <p>Data Science Intern</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/150" alt="Profile">
+            <h2>Rahul</h2>
+            <p>Web Developer Intern</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/150" alt="Profile">
+            <h2>Anjali</h2>
+            <p>AI Intern</p>
+            <button>View Profile</button>
+        </div>
+
+    </section>
+
+    <!-- TABLE -->
+    <section>
+        <h2>Course Details</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Dharshan</td>
+                <td>Data Science</td>
+                <td>Learning</td>
+            </tr>
+            <tr>
+                <td>Rahul</td>
+                <td>Web Development</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- FORM -->
+    <section>
+        <h2>Application Form</h2>
+
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+
+            <label for="role">Select Role:</label><br>
+            <select id="role">
+                <option>Data Science</option>
+                <option>Web Development</option>
+                <option>AI</option>
+            </select><br><br>
+
+            <label for="agree">I agree to terms</label>
+            <input type="checkbox" id="agree"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p style="text-align:center;">© 2026 Internship Task</p>
+</footer>
+
+</body>
+</html>

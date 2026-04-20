@@ -1,0 +1,20 @@
+@import 'variables';
+
+// 2. Reusable button mixin
+@mixin button-style($bg) {
+    background-color: $bg;
+    padding: $padding;
+    border-radius: $radius;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// Button class using mixin
+.btn {
+    @include button-style($primary-color);
+}

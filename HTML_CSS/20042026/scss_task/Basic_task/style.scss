@@ -1,0 +1,53 @@
+// 2. VARIABLES
+$primary-color: blue;
+$secondary-color: gray;
+$text-color: white;
+
+$font-large: 24px;
+$font-medium: 18px;
+
+// 4. MIXIN (flex center)
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 1 & 3. NESTING (Card component)
+.card {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+
+    // Use mixin
+    @include flex-center;
+    flex-direction: column;
+
+    h2 {
+        color: $primary-color;
+        font-size: $font-large;
+    }
+
+    p {
+        font-size: $font-medium;
+        color: $secondary-color;
+    }
+
+    button {
+        background-color: $primary-color;
+        color: $text-color;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darkblue;
+        }
+    }
+}
+
+// 5. Using mixin in another component
+.container {
+    @include flex-center;
+    height: 100vh;
+}

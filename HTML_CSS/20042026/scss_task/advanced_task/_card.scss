@@ -1,0 +1,22 @@
+@import 'variables';
+
+// 3. Profile card using nesting + variables
+.card {
+    background-color: $secondary-color;
+    padding: 20px;
+    border-radius: $radius;
+    text-align: center;
+    margin: 20px;
+
+    h2 {
+        color: $primary-color;
+    }
+
+    p {
+        color: $text-color;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}

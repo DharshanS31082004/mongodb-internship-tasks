@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced CSS Tasks</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        /* 5. Fixed Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* 5. Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        /* 5. Main Content Center */
+        main {
+            width: 80%;
+            margin: 80px auto 20px auto; /* space for fixed header */
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* 1 & 2. FLEXBOX LAYOUT */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 30%;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* 3. Card Hover Effect */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 20px black;
+        }
+
+        /* 4. Reusable Button Class */
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Intern Profiles</h1>
+</header>
+
+<main>
+
+    <!-- FLEXBOX CARD LAYOUT -->
+    <section class="card-container">
+
+        <div class="card">
+            <img src="https://picsum.photos/150" alt="Profile">
+            <h2>Dharshan</h2>
+            <p>Data Science Intern</p>
+            <button class="btn">View Profile</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/150" alt="Profile">
+            <h2>Rahul</h2>
+            <p>Web Developer Intern</p>
+            <button class="btn">View Profile</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/150" alt="Profile">
+            <h2>Anjali</h2>
+            <p>AI Intern</p>
+            <button class="btn">View Profile</button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Internship Task</p>
+</footer>
+
+</body>
+</html>
